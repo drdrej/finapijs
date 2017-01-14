@@ -1,0 +1,17 @@
+{
+  "name": "finapijs",
+  "version": "0.0.1",
+  "description": "api for simple fints access. built on top of open-fin-ts-js-client. it's only syntax sugar for anther way to express.",
+  "main": "fints-read-module.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "bluebird": "^3.4.7",
+    "open-fin-ts-js-client": "^2.0.4",
+    "underscore": "^1.8.3"
+  }
+}
