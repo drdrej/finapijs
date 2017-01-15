@@ -19,10 +19,10 @@ module.exports = function( client ) {
 
                 console.log( "Kontoauszüge geladen." );
 
-                var dump = require( "json-dump-module" );
+                var dump = require( "./json-dump-module" );
                 dump( "kontoauszug", data )
                     .then( function( path ) {
-                        console.log( "> saved kontostand.")
+                        console.log( "> saved kontostand.");
                         resolve( data );
                     })
                     .catch( function() {

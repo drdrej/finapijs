@@ -7,6 +7,7 @@ module.exports = function( prefix, data ) {
     var Promise = require( 'bluebird' );
 
     return new Promise( function( resolve, reject ) {
+        var moment = require( "moment" );
         var suffix = moment().format( 'X' );
         var file = prefix + "_" + suffix + ".json"; //'./kontoauszug.json';
 
