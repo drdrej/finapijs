@@ -1,6 +1,6 @@
 {
   "name": "finapijs",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "api for simple fints access. built on top of open-fin-ts-js-client. it's only syntax sugar for anther way to express.",
   "main": "api.js",
   "scripts": {
