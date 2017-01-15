@@ -19,14 +19,16 @@ module.exports = function( client ) {
 
                 console.log( "Kontoauszüge geladen." );
 
-                var jsonfile = require('jsonfile')
-                var file = './kontoauszug.json';
+                var dump = require( "json-dump-module" );
+                dump( "kontoauszug", data )
+                    .then( function( path ) {
+                        console.log( "> saved kontostand.")
+                        resolve( data );
+                    })
+                    .catch( function() {
+                        console.log( "[!] Kann den Response nicht speichern.")
+                    });
 
-                jsonfile.writeFile(file, data, function (err) {
-                    console.error(err);
-                });
-
-                resolve(client);
             });
     });
 };
